@@ -2,8 +2,8 @@ from playsound3 import playsound
 import time
 
 #ANSI
-CLEAR = "\035[2J"
-CLEAR_AND_RETURN = "\035[H"
+CLEAR = "\033[2J"
+CLEAR_AND_RETURN = "\033[H"
 
 def alarm(seconds):
     time_elapsed = 0
