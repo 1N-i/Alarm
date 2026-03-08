@@ -1,3 +1,4 @@
+#O arquivo de som tem de estar somente dentro da pasta principal e mais nenhuma outra pasta
 from playsound3 import playsound
 from time import sleep
 import os
@@ -11,6 +12,8 @@ CLEAR_LINE = "\033[K" #Erases the rest of the text
 
 def alarm(seconds):
     time_elapsed = 0
+    path = os.path.dirname(os.path.abspath(__file__))
+    sound = os.path.join(path, "alarm.mp3")
 
     print(CLEAR)
     while time_elapsed < seconds:
@@ -23,7 +26,7 @@ def alarm(seconds):
 
         print(f"{HOME}{CLEAR_LINE}Alarm will sound in: {minutes_left:02d}:{seconds_left:02d}")
     print("Times up!")
-    playsound("alarm.mp3")
+    playsound(sound)
 
 minutes = int(input("Minutes: "))  * 60
 seconds = int(input("Seconds: "))
