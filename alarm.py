@@ -1,4 +1,3 @@
-#O arquivo de som tem de estar somente dentro da pasta principal e mais nenhuma outra pasta
 from playsound3 import playsound
 from time import sleep
 import os
