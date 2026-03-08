@@ -35,7 +35,7 @@ A countdown timer and alarm that uses ANSI escape codes for dynamic screen updat
 * **External Libraries:** Integrating `playsound3` to handle cross-platform audio execution.
 
 ## 🔮 Future Improvements
-- [ ] User input for custom alarm durations.
+- [X] User input for custom alarm durations.
 - [ ] Support for multiple alarm sounds/choices.
 - [ ] A graphical progress bar.
 
