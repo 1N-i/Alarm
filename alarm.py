@@ -25,4 +25,6 @@ def alarm(seconds):
     print("Times up!")
     playsound("alarm.mp3")
 
-alarm(10) #10 seconds
+minutes = int(input("Minutes: "))  * 60
+seconds = int(input("Seconds: "))
+alarm(minutes + seconds)
